@@ -2,12 +2,12 @@
 
 cards::Suit cards::getCardSuit(Card c)
 {
-	return c >> cards::suitShift;
+	return c.suit;
 }
 
 cards::Number cards::getCardNumber(Card c)
 {
-	return c & cards::numberMask;
+	return c.number;
 }
 
 std::string cards::suitToString(Suit s)
